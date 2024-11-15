@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Exploring the Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">NASA</div>
+        <nav>
+            <ul>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#facts">Fun Facts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section class="hero">
+            <h1>Exploring the Universe</h1>
+            <p>Your gateway to the cosmos. Discover missions, science, and more!</p>
+        </section>
+
+
+        <section id="missions">
+            <h2>Our Missions</h2>
+            <div class="missions-container">
+                <div class="mission-card">
+                    <h3>Artemis</h3>
+                    <p>Returning humans to the Moon and paving the way to Mars.</p>
+                </div>
+                <div class="mission-card">
+                    <h3>James Webb</h3>
+                    <p>The next generation space telescope, looking at the dawn of time.</p>
+                </div>
+                <div class="mission-card">
+                    <h3>Mars Rover</h3>
+                    <p>Exploring the Red Planet for signs of life and habitability.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" style="background-image: url('https://scitechdaily.com/images/Webb-Wallpaper-scaled.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('https://cdn.britannica.com/25/160325-050-EB1C8FB7/image-instruments-Earth-satellite-NASA-Suomi-National-2012.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.squarespace-cdn.com/content/v1/550ed02fe4b00ccc1d9e9000/1596948441154-WXWKV8BOFM0ODDEOSTW2/CorrectlyProcessed.jpg?format=1500w');"></div>
+            </div>
+        </section>
+
+
+        <section id="facts">
+            <h2>Did You Know?</h2>
+            <p id="fun-fact">NASA was established in 1958 and has been exploring space ever since!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NASA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

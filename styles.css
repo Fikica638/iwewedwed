@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #007aff;
+}
+.hero {
+    background: url('https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRqLlrACKUJgDt1swkdhqCMB7G91y4L22oxQeNDgSl7EB2GI3U0ThlmQDqFQxG6B90X') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+section {
+    padding: 50px 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.missions-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.mission-card {
+    flex: 1;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.gallery-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+#fun-fact {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #007aff;
+    animation: fade-in 2s ease-in-out infinite;
+}
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+@keyframes fade-in {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
